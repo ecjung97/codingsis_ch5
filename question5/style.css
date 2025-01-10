@@ -65,7 +65,7 @@ body {
   border: 5px solid #2e5077;
   border-top: none;
   width: 500px;
-  height: 500px;
+  height: 400px;
   align-items: flex-end;
   justify-content: flex-end;
   .div1 {

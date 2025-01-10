@@ -9,11 +9,47 @@
   <body>
     <h1>Chapter 5 - HTML을 좀 더 쉽게 움직이는 방법</h1>
     <div class="questions">
-      <a href="./question1/question1.html" class="one">문제 1</a>
-      <a href="./question2/question2.html" class="two">문제 2</a>
-      <a href="./question3/question3.html" class="three">문제 3</a>
-      <a href="./question4/question4.html" class="four">문제 4</a>
-      <a href="./question5/question5.html" class="five">문제 5</a>
+      <a
+        href="./question1/question1.html"
+        class="one"
+        onclick="changeIframeSrc(event, './question1/question1.html')"
+        >문제 1</a
+      >
+      <a
+        href="./question2/question2.html"
+        class="two"
+        onclick="changeIframeSrc(event, './question2/question2.html')"
+        >문제 2</a
+      >
+      <a
+        href="./question3/question3.html"
+        class="three"
+        onclick="changeIframeSrc(event, './question3/question3.html')"
+        >문제 3</a
+      >
+      <a
+        href="./question4/question4.html"
+        class="four"
+        onclick="changeIframeSrc(event, './question4/question4.html')"
+        >문제 4</a
+      >
+      <a
+        href="./question5/question5.html"
+        class="five"
+        onclick="changeIframeSrc(event, './question5/question5.html')"
+        >문제 5</a
+      >
     </div>
+    <iframe
+      id="content-frame"
+      src="./question1/question1.html"
+      class="iframe"
+    ></iframe>
+    <script>
+      function changeIframeSrc(event, src) {
+        event.preventDefault();
+        document.getElementById("content-frame").src = src;
+      }
+    </script>
   </body>
 </html>

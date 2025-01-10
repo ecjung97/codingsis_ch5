@@ -9,12 +9,18 @@ h1 {
   color: #2e5077;
 }
 
+.iframe {
+  width: 600px;
+  height: 500px;
+  border: none;
+}
+
 .questions {
   display: flex;
   justify-content: center;
   width: 80%;
-  height: 500px;
   gap: 40px;
+  margin-bottom: 20px;
   a {
     margin-top: 20px;
     width: 50px;
